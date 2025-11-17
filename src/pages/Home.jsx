@@ -11,7 +11,7 @@ import SchoolsBanner from "../assets/images/schools-banner.png";
 import Testimonials from "../partials/Testimonials";
 import banner from "../assets/images/banner3.jpg";
 import banner2 from "../assets/images/banner2.jpg";
-import Ba from "../assets/images/ba.jpg";
+import Ba from "../assets/images/kk.jpg";
 import banner3 from "../assets/images/midd.jpg";
 import banner4 from "../assets/images/img2.jpg";
 
@@ -85,10 +85,10 @@ const Home = () => {
       {/* Carousel */}
       <header
         className="relative h-screen bg-cover bg-center"
-        style={{ backgroundImage: `url(${banner3})` }} // 🔁 Replace with your real school image
+        style={{ backgroundImage: `url(${Ba})` }} // 🔁 Replace with your real school image
       >
         {/* Gradient Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-r from-black via-black/70 to-black"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-black/40 via-black/75 to-black/40"></div>
 
         {/* Hero Content */}
         <div className="relative z-10 flex h-full items-center justify-center px-6 text-white">
@@ -99,7 +99,7 @@ const Home = () => {
             </p>
 
             {/* Heading */}
-            <h1 className="mb-4 text-4xl font-extrabold uppercase tracking-tight sm:text-5xl md:text-6xl animate-pulse">
+            <h1 className="mb-4 text-3xl font-extrabold uppercase tracking-tight sm:text-4xl md:text-5xl animate-pulse">
               Welcome to Aptech Calabar
             </h1>
 
