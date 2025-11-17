@@ -1,0 +1,155 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 
+font-family: 'Cambay', sans-serif;
+font-family: 'Jost', sans-serif;
+font-family: 'Mulish', sans-serif;
+*/
+
+:root {
+  --animate-delay: 5s;
+}
+
+/* Global Styles */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Jost", sans-serif;
+}
+
+p,
+small,
+span,
+a {
+  font-family: "Mulish", sans-serif;
+  /* font-family: 'Cambay', sans-serif; */
+}
+/* Global Styles */
+
+/* Navbar */
+.navlink {
+  @apply text-[16px] sm:text-md;
+}
+
+/* 
+===============================Home Page==========================
+*/
+
+/* Home Carousel */
+
+.slide1 {
+  background-position: top;
+  background-size: cover;
+  background-image: linear-gradient(
+      62deg,
+      rgba(0, 0, 0, 0.5) 20%,
+      rgba(0, 0, 0, 0.6) 80%
+    ),
+    url(./assets/images/banner1.jpg);
+}
+.slide2 {
+  background-position: top;
+  background-size: cover;
+  background-image: linear-gradient(
+      62deg,
+      rgba(0, 0, 0, 0.5) 20%,
+      rgba(0, 0, 0, 0.6) 80%
+    ),
+    url(./assets/images/banner2.jpg);
+}
+.slide3 {
+  background-position: top;
+  background-size: cover;
+  background-image: linear-gradient(
+      62deg,
+      rgba(0, 0, 0, 0.5) 20%,
+      rgba(0, 0, 0, 0.6) 80%
+    ),
+    url(./assets/images/banner3.jpg);
+}
+
+/* Home Features */
+.features {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+.feature-btn svg, .download-btn svg {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+  transition-duration: 100ms;
+}
+
+.feature-btn:hover svg {
+  transform: translateX(5px);
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+  transition-duration: 100ms;
+}
+
+.download-btn:hover svg {
+  transform: translateY(4px);
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+  transition-duration: 100ms;
+}
+/* Home popular Courses */
+.swiper-container {
+  overflow: hidden;
+}
+
+/* Testimonials */
+.swiper-pagination-bullet-active {
+  background-color: #fff !important;
+}
+
+.swiper-pagination-bullet {
+  background-color: #fff !important;
+}
+/* 
+===============================Home Page==========================
+*/
+
+/* 
+===============================About Page==========================
+*/
+
+.intro-banner {
+  background-size: cover;
+  background-image: linear-gradient(
+      62deg,
+      rgba(0, 0, 0, 0.6) 20%,
+      rgba(0, 0, 0, 0.6) 80%
+    ),
+    url(./assets/images/intro-banner.jpg);
+}
+
+/* 
+===============================About Page==========================
+*/
+
+/* 
+===============================Contact Page==========================
+*/
+
+.input-field {
+  background-color: white;
+  padding: 0.625rem !important;
+  font-size: 15px;
+  @apply block w-full rounded-md bg-white p-2.5 text-md  font-medium text-gray-600 ring-2 ring-gray-400 placeholder:text-gray-500 focus:border-aptechRed focus:border-opacity-60 focus:ring-aptechRed !important;
+}
+
+.input-field.require-padding {
+  @apply pl-10 !important;
+}
+/* 
+===============================Contact Page==========================
+*/
